@@ -122,7 +122,7 @@ masternodeprivkey='$key'
 mkdir helpico
 cd helpico
 wget https://github.com/AnonymousDo/Helpico/releases/download/final/Linux.tar.gz
-tar Linux.tar.gz
+tar -xvf Linux.tar.gz
 cd Linux
 # Give permissions, move to bin folder and run
 chmod +x helpicod
