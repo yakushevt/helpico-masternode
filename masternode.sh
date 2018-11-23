@@ -72,6 +72,7 @@ pkg-config \
 libssl-dev \
 bsdmainutils \
 software-properties-common \
+python-virtualenv \
 libzmq3-dev \
 libevent-dev \
 libboost-dev \
@@ -83,8 +84,7 @@ libboost-test-dev \
 libboost-thread-dev \
 libdb4.8-dev \
 libdb4.8++-dev \
-libminiupnpc-dev \
-python-virtualenv 
+libminiupnpc-dev 
 
 # Install fail2ban if needed
 if [[ ("$install_fail2ban" == "y" || "$install_fail2ban" == "Y" || "$install_fail2ban" == "") ]]; then
@@ -147,6 +147,7 @@ sudo pip3 install virtualenv
 sudo apt-get install screen
 sudo git clone https://github.com/AnonymousDo/sentinel.git /root/sentinel-helpico
 cd /root/sentinel-helpico
+mkdir database
 virtualenv venv
 . venv/bin/activate
 pip install -r requirements.txt
