@@ -123,7 +123,6 @@ mkdir helpico
 cd helpico
 wget https://github.com/AnonymousDo/Helpico/releases/download/v1.0.1/Linux-deamon-x64.zip
 unzip Linux-deamon-x64
-cd Linux-deamon-x64
 # Give permissions, move to bin folder and run
 chmod +x helpicod
 chmod +x helpico-cli
